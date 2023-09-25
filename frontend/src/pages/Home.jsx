@@ -23,17 +23,17 @@ const Home = () => {
             <th>S.No</th>
             <th>Name</th>
             <th>Email</th>
-            <th>Type</th>
+            
             <th>Action</th>
           </tr>
         </thead>
         <tbody>
         {users.map((user,index)=>(
           <tr key={user.id}>
-            <td>{index}</td>
-            <td>{index.name}</td>
-            <td>{index.email}</td>
-            <td>{index.userType}</td>
+            <td>{++index}</td>
+            <td>{user.name}</td>
+            <td>{user.email}</td>
+            
             <td>Edit</td>
           </tr>
         ))}
